@@ -1,7 +1,15 @@
 # Indefinite Arguments (**kwargs) Practice #1
 # Create a function called number_attributes that counts the number of parameters that are passed, and returns that number as the result.
 
+#kwargs are just key word **args
+def a_sum(**Kwargs):
+  total = 0
+  for key, value in kwargs.items():
+    print(f"{key} = {value}")
+    total += value
+  return total
 
+print(a_sum(x = 3, y = 5, z = 22))
 
 
 
